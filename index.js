@@ -16,11 +16,11 @@ let slots = [
     }
 ];
 
-app.get('/api/slots', (req, res) => {
+app.get('/slots', (req, res) => {
     res.status(200).json(slots);
 });
 
-app.post('/api/slot', (req, res) => {
+app.post('/slot', (req, res) => {
     const newProduct = req.body;
     slots.push(newProduct);
 
