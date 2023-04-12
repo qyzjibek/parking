@@ -35,3 +35,6 @@ app.delete('./product/{id}', (req, res) => {
 app.listen(port, () => {
     console.log('Server started');
 })
+
+// Export the Express API
+module.exports = app;
